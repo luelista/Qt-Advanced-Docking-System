@@ -11,12 +11,13 @@ bindings-factory = "pyqtbuild:PyQtBindings"
 # Specify the PEP 566 metadata for the project.
 [tool.sip.metadata]
 name = "PyQtAds"
-version = "3.8"
+version = "3.8.1"
 summary = "Python bindings for Qt Advanced Docking System"
 home-page = "https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System/"
 license = "LGPL v2.1"
 description-file = "README.md"
 requires-dist = "PyQt5 (>=5.15.4)"
+description-content-type = "text/markdown"
 
 
 [tool.sip.project]
