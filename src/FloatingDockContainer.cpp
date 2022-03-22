@@ -805,14 +805,18 @@ void CFloatingDockContainer::closeEvent(QCloseEvent *event)
 
 	if (isClosable())
 	{
-		auto TopLevelDockWidget = topLevelDockWidget();
-		if (TopLevelDockWidget && TopLevelDockWidget->features().testFlag(CDockWidget::DockWidgetDeleteOnClose))
-		{
-			if (!TopLevelDockWidget->closeDockWidgetInternal())
-			{
-				return;
-			}
-		}
+        for (auto DockArea : d->DockContainer->openedDockAreas())
+        {
+            for (auto DockWidget : DockArea->openedDockWidgets())
+            {
+                if (DockWidget->features().testFlag(CDockWidget::DockWidgetDeleteOnClose))
+                {
+                    DockWidget->closeDockWidgetInternal();
+                }
+                else
+                    DockWidget->toggleView(false);
+            }
+        }
 
 		// In Qt version after 5.9.2 there seems to be a bug that causes the
 		// QWidget::event() function to not receive any NonClientArea mouse
