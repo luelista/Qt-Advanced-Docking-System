@@ -12,7 +12,6 @@ class PyQtAds(PyQtProject):
 		""" Initialise the project. """
 
 		super().__init__()
-		print("build_dir", self.build_dir)
 
 		self.bindings_factories = [ads]
 
