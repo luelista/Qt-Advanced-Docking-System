@@ -14,9 +14,7 @@ description-file = "README.md"
 requires-dist = "PyQt5 (>=5.15.4)"
 description-content-type = "text/markdown"
 
-
 [tool.sip.project]
-#sip-files-dir = "sip"
 tag-prefix = "QtAds"
 
 [tool.sip.bindings.ads]
