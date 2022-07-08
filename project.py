@@ -4,7 +4,6 @@ import os
 from pyqtbuild import PyQtBindings, PyQtProject
 from sipbuild import Option
 
-log=open("/tmp/project.log","w")
 print("project py running")
 
 class PyQtAds(PyQtProject):
