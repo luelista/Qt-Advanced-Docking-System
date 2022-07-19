@@ -18,6 +18,7 @@ description-content-type = "text/markdown"
 tag-prefix = "QtAds"
 
 [tool.sip.bindings.ads]
+define-macros = ["ADS_SHARED_EXPORT"]
 sip-file = "ads.sip"
 include-dirs = ["src"]
 qmake-QT = ["widgets"]
