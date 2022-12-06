@@ -53,7 +53,8 @@ public:
 	 * \return Returns the dock area widget that contains the new DockWidget
 	 */
 	ads::CDockAreaWidget* addDockWidget(ads::DockWidgetArea area, ads::CDockWidget* Dockwidget /Transfer/,
-		ads::CDockAreaWidget* DockAreaWidget /Transfer/ = 0);
+		ads::CDockAreaWidget* DockAreaWidget /Transfer/ = 0,
+		int Index = -1);
 
 	/**
 	 * Removes dockwidget
