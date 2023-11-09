@@ -5,6 +5,20 @@
 namespace ads
 {
 
+class CTitleBarButton : QToolButton
+{
+    %TypeHeaderCode
+    #include <DockAreaTitleBar.h>
+    %End
+
+protected:
+    bool event(QEvent *ev);
+
+public:
+    CTitleBarButton(bool visible = true, QWidget* parent /TransferThis/ = Q_NULLPTR );
+    virtual void setVisible(bool visible);
+};
+
 class CDockAreaTitleBar : QFrame
 {
     %TypeHeaderCode

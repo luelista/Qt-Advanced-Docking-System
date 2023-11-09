@@ -59,7 +59,7 @@ public:
 	ads::CDockWidget::DockWidgetFeatures features() const;
 	ads::CFloatingDockContainer* floatingWidget() const;
 	void closeOtherAreas(ads::CDockAreaWidget* KeepOpenArea);
-    ads::CAutoHideSideBar* sideTabBar(SideBarLocation area) const;
+    ads::CAutoHideSideBar* autoHideSideBar(SideBarLocation area) const;
 	QList<ads::CAutoHideDockContainer*> autoHideWidgets() const;
 	QRect contentRect() const;
 	QRect contentRectGlobal() const;
