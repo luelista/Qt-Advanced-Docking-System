@@ -6,7 +6,7 @@ build-backend = "sipbuild.api"
 # Specify the PEP 566 metadata for the project.
 [tool.sip.metadata]
 name = "PyQtAds"
-version = "4.0.2"
+version = "4.1.1"
 summary = "Python bindings for Qt Advanced Docking System"
 home-page = "https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System/"
 license = "LGPL v2.1"
